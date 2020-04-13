@@ -1,2 +1,2 @@
 # WebScrapping-Python
-Beautiful Soap Data scrapping
+Web scrapping demo for the Data Science MSC in UOC
