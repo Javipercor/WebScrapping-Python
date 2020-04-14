@@ -33,11 +33,9 @@ class tableScraper():
         return data
     def create_dataset(self,data,header):
         df=pd.DataFrame(np.concatenate(data),columns=header)
-        df=df.fillna(0)
-        df=df.replace('null',0)
         return(df)
     def save_data(self,file,name,sep):
-        file.to_csv(name+'.csv',sep=sep)
+        file.to_csv('../datasets/'+name+'.csv',sep=sep)
 
 
 class graphScraper():
@@ -100,6 +98,6 @@ class graphScraper():
 
 
     def save_data(self,file,name,sep):
-        file.to_csv(name+'.csv',sep=sep)
+        file.to_csv('../datasets/'+name+'.csv',sep=sep)
     
      
