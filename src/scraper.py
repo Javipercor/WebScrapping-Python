@@ -33,6 +33,7 @@ class tableScraper():
         return data
     def create_dataset(self,data,header):
         df=pd.DataFrame(np.concatenate(data),columns=header)
+        df=df.replace('N/A','')
         return(df)
     def save_data(self,file,name,sep):
         file.to_csv('../datasets/'+name+'.csv',sep=sep,index=False)
@@ -91,6 +92,7 @@ class graphScraper():
         data,countries=self.__appendseries(data_complete,df_data)
         data.index=countries
         data=data.T
+        data.insert(0, "Day", days_sorted)
         data=data.fillna(0)
         data=data.replace('null',0)
         return(data)
