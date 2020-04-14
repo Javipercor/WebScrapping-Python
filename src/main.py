@@ -26,7 +26,7 @@ data_continents=tablescraper.create_dataset(continents,header)
 tablescraper.save_data(data_continents,'data_continents',';')
 #Realizamos la tercera consulta, esta vez a las gráficas de evolución de caso por cada día y guardamos
 total_days,series_countries=graphscraper.get_series(table,'a','mt_a','href',url)
-data_series_countries=graphscraper.create_series_dataset(total_days,series_countries)
-graphscraper.save_data(data_series_countries,'data_series_countries',';')
+data_series_cases_countries=graphscraper.create_series_dataset(total_days,series_countries)
+graphscraper.save_data(data_series_cases_countries,'data_series_cases_countries',';')
 
 

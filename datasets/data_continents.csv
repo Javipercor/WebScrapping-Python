@@ -1,8 +1,8 @@
-;Country-Other;TotalCases;NewCases;TotalDeaths;NewDeaths;TotalRecovered;ActiveCases;Serious-Critical;Tot Cases/1M pop;Deaths/1M pop;TotalTests;"Tests/
+Country-Other;TotalCases;NewCases;TotalDeaths;NewDeaths;TotalRecovered;ActiveCases;Serious-Critical;Tot Cases/1M pop;Deaths/1M pop;TotalTests;"Tests/
 1M pop";Continent
-0;North America;628976;+1912;25220;+108;47798;555958;13885;;;;;North America
-1;Europe;923184;+15798;81787;+1798;240123;601274;29271;;;;;Europe
-2;Asia;315341;+5101;11570;+219;154325;149446;6458;;;;;Asia
-3;South America;55255;+561;2286;+38;9915;43054;1167;;;;;South America
-4;Oceania;7857;+58;70;+4;4227;3560;85;;;;;Australia/Oceania
-5;Africa;16306;+362;840;+2;3136;12330;178;;;;;Africa
+North America;630168;3104;26085;973;47819;556264;13881;;;;;North America
+Europe;923786;16400;81856;1867;240294;601636;29272;;;;;Europe
+Asia;315401;5161;11570;219;154374;149457;6458;;;;;Asia
+South America;55653;959;2296;48;10194;43163;1167;;;;;South America
+Oceania;7857;58;70;4;4227;3560;85;;;;;Australia/Oceania
+Africa;16403;459;840;2;3171;12392;178;;;;;Africa

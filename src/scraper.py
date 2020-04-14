@@ -25,7 +25,7 @@ class tableScraper():
             childs=branch.find_all('td')
             sample=[]
             for j in range(0,len(childs)):
-                value=[childs[j].get_text().strip('\n').replace(',', '')]
+                value=[(childs[j].get_text().strip('\n').replace(',', '').strip('+'))]
                 sample=np.concatenate((sample, value), axis=0)
             if(sample==[] or sample[-1]==''):
                 continue
@@ -35,7 +35,7 @@ class tableScraper():
         df=pd.DataFrame(np.concatenate(data),columns=header)
         return(df)
     def save_data(self,file,name,sep):
-        file.to_csv('../datasets/'+name+'.csv',sep=sep)
+        file.to_csv('../datasets/'+name+'.csv',sep=sep,index=False)
 
 
 class graphScraper():
@@ -98,6 +98,6 @@ class graphScraper():
 
 
     def save_data(self,file,name,sep):
-        file.to_csv('../datasets/'+name+'.csv',sep=sep)
+        file.to_csv('../datasets/'+name+'.csv',sep=sep,index=False)
     
      
